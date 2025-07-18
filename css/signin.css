@@ -1,0 +1,199 @@
+:root {
+    --primary-color: #165E75;
+    --secondary-color: #A9E2F5;
+    --text-color: #182E36;
+    --background-color: #DBF6FF;
+
+    --font-family: "inter", sans-serif;
+    --text-font: "Lato", sans-serif;
+
+    --fs-1: 18px;
+    --fs-2: 20px;
+    --fs-3: 31px;
+    --fs-4: 50px;
+    --fs-5: 80px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+.form {
+    display: flex;
+    height: 100vh;
+}
+
+.form .showcase {
+    background-color: var(--background-color);
+    width: 50%;
+    padding: 10px 20px;
+}
+
+.showcase .showcase-content .circle1 {
+    width: 50px;
+    height: 50px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    position: relative;
+    top: 20%;
+    left: 10%;
+}
+
+.showcase .showcase-content .circle2 {
+    width: 150px;
+    height: 150px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 70%;
+    left: 20%;
+}
+
+.showcase .logo img {
+    width: 80px;
+    height: 80px;
+}
+
+.showcase .showcase-header {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+.showcase .showcase-header .showcase-title {
+    font-size: var(--fs-5);
+    color: var(--primary-color);
+}
+
+.showcase-header .line {
+    border: 4px solid var(--primary-color);
+    width: 60px;
+}
+
+.showcase .circle {
+    position: absolute;
+    top: 50%;
+    left: 48.5%;
+    background-color: var(--background-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.showcase .circle .icon {
+    font-size: var(--fs-3);
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.form .content {
+    width: 50%;
+    padding: 10px 20px;
+}
+
+.content .btns {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+
+.content .btns .btn1 {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: var(--fs-1);
+    color: var(--background-color);
+    transition: all .3s ease-in;
+}
+
+
+.content .btns .btn2 {
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: var(--fs-1);
+    color: var(--text-color);
+    transition: all .3s ease-in;
+}
+
+.content .btns .btn2:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.content .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 25%;
+}
+
+.content .inputs .email label {
+    font-size: var(--fs-3);
+    text-transform: capitalize;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.content .inputs .email .input {
+    width: 400px;
+    height: 40px;
+    padding-left: 20px;
+    border: none;
+    border-bottom: 2px solid var(--secondary-color);
+    text-transform: capitalize;
+    font-size: var(--fs-2);
+    color: var(--text-color);
+    outline: none;
+}
+
+.content .inputs .password label {
+    font-size: var(--fs-3);
+    text-transform: capitalize;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.content .inputs .password .input {
+    width: 400px;
+    height: 40px;
+    padding-left: 20px;
+    border: none;
+    border-bottom: 2px solid var(--secondary-color);
+    text-transform: capitalize;
+    font-size: var(--fs-2);
+    color: var(--text-color);
+    outline: none;
+}
+
+.content .btn {
+    position: relative;
+    left: 20%;
+    width: 200px;
+    height: 80px;
+    background-color: var(--primary-color);
+    border: none;
+    font-size: var(--fs-3);
+    color: var(--background-color);
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.content .btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}

@@ -1,0 +1,43 @@
+@import url('./signin.css');
+
+.content .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10%;
+}
+
+.content .btns {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+
+.content .btns .btn1 {
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: var(--fs-1);
+    color: var(--text-color);
+    transition: all .3s ease-in;
+}
+
+.content .btns .btn1:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+
+.content .btns .btn2 {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: var(--fs-1);
+    color: var(--background-color);
+    transition: all .3s ease-in;
+}
